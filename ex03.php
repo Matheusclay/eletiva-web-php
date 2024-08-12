@@ -38,15 +38,15 @@ if (!isset($_POST["calcular"])) {
     {
         $bonus = 0;
         if ($desempenho == 1) {
-            $bonus = $lucros_empresa * 0.1;
+            $bonus = $lucros_empresa * 0.001;
         } else if ($desempenho == 2) {
-            $bonus = $lucros_empresa * 0.2;
+            $bonus = $lucros_empresa * 0.002;
         } else if ($desempenho == 3) {
-            $bonus = $lucros_empresa * 0.3;
+            $bonus = $lucros_empresa * 0.003;
         } else if ($desempenho == 4) {
-            $bonus = $lucros_empresa * 0.5;
+            $bonus = $lucros_empresa * 0.005;
         } else if ($desempenho == 5) {
-            $bonus = $lucros_empresa * 0.7;
+            $bonus = $lucros_empresa * 0.007;
         }
         return $bonus;
     }
