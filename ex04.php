@@ -89,7 +89,7 @@ if (isset($_POST["calcular"])) {
 
     $nome_tarefa = $_POST["nome_tarefa"];
     $total_horas = $_POST["total_horas"];
-    $complexidade = $_POST["complexidade"];
+    $complexidade = $_POST["complexidade"]; 
     $nome_funcionario = $_POST["nome_funcionario"];
     $disponibilidade_horas = $_POST["disponibilidade_horas"];
     $nivel_experiencia = $_POST["nivel_experiencia"];
@@ -98,11 +98,10 @@ if (isset($_POST["calcular"])) {
     $assumir = assumirTask($nivel_experiencia, $complexidade);
     $descricaoComplexidade = $mapaComplexidade[$complexidade];
     $descricaoNivelExperiencia = $mapaNivelExperiencia[$nivel_experiencia];
-    
+
 
     echo "O funcionário " . $nome_funcionario . " está disponível para a tarefa " . $nome_tarefa . "? " . $disponibilidade . "<br>";
     echo "O funcionário " . $nome_funcionario . " pode assumir a tarefa " . $nome_tarefa . "? " . $assumir . " pois ele é " . $descricaoNivelExperiencia . " e a tarefa é de complexidade " . $descricaoComplexidade;
-
 }
 
 require_once ("footer.php");
