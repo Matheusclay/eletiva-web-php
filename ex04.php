@@ -56,7 +56,7 @@ if (isset($_POST["calcular"])) {
         if ($disponibilidade_horas > ($total_horas * 0.1)) {
             return "Disponível";
         } else {
-            return "Indisponível";
+            return " Indisponível";
         }
     }
 
